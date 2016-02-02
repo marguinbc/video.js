@@ -58,7 +58,7 @@ test('should restore default settings', function() {
   }),
   defaultSettings = {
       'backgroundColor': '#000',
-      'backgroundOpacity': '0.8',
+      'backgroundOpacity': '1',
       'color': '#FFF',
       'fontFamily': 'proportionalSansSerif',
       'textOpacity': '1',
@@ -230,10 +230,10 @@ test('should not restore saved settings', function() {
       'backgroundColor': '#FFF',
       'windowColor': '#FFF',
       'fontPercent': 1.25
-    }, 
+    },
     defaultSettings = {
       'backgroundColor': '#000',
-      'backgroundOpacity': '0.8',
+      'backgroundOpacity': '1',
       'color': '#FFF',
       'fontFamily': 'proportionalSansSerif',
       'textOpacity': '1',

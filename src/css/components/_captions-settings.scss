@@ -6,7 +6,7 @@
   color: $primary-foreground-color;
   margin: 0 auto;
   padding: 0.5em;
-  height: 20em;
+  height: 15em;
   font-size: 12px;
   width: 40em;
 }
@@ -40,8 +40,9 @@
   margin: 5px;
   padding: 3px;
   min-height: 40px;
+  border: none;
 }
-.vjs-caption-settings .vjs-tracksetting label {
+.vjs-caption-settings .vjs-tracksetting label, legend {
   display: block;
   width: 100px;
   margin-bottom: 5px;
@@ -50,6 +51,8 @@
 .vjs-caption-settings .vjs-tracksetting span {
   display: inline;
   margin-left: 5px;
+  vertical-align: top;
+  float: right;
 }
 
 .vjs-caption-settings .vjs-tracksetting > div {
@@ -67,24 +70,21 @@
   margin-right: 10px;
 }
 
-.vjs-caption-settings .hiddenReadable {
-  position:absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;  
-}
-
 .vjs-caption-settings fieldset {
   margin-top: 1em;
   margin-left: .5em;
 }
 
-.vjs-caption-settings h2 {
-  margin-bottom: 0;
-  margin-left: .5em;
+// Hide labels within fieldsets, so they are only for screen reader users
+.vjs-caption-settings fieldset .vjs-label {
+  position:absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
+
 .vjs-caption-settings input[type="button"] {
   width: 40px;
   height: 40px;
